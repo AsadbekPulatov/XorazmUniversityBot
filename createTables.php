@@ -22,7 +22,7 @@ $sql = "CREATE TABLE universities (
     )";
 
 if ($connect->query($sql) === TRUE) {
-    echo "Table lessons created successfully";
+    echo "Table universities created successfully";
 } else {
     echo "Error creating table: " . $connect->error;
 }
@@ -33,7 +33,7 @@ $sql = "CREATE TABLE channels (
     )";
 
 if ($connect->query($sql) === TRUE) {
-    echo "Table lessons created successfully";
+    echo "Table channels created successfully";
 } else {
     echo "Error creating table: " . $connect->error;
 }
@@ -45,7 +45,7 @@ $sql = "CREATE TABLE voices (
     )";
 
 if ($connect->query($sql) === TRUE) {
-    echo "Table lessons created successfully";
+    echo "Table voices created successfully";
 } else {
     echo "Error creating table: " . $connect->error;
 }
