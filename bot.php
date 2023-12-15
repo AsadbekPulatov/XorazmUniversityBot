@@ -2,9 +2,10 @@
 
 include 'Telegram.php';
 require_once 'User.php';
-require_once 'Lesson.php';
 
-$bot_token = "6254704543:AAFYOPGWTzIvM-MUlMModckcpuy1Sz4F80s";
+$bot_token = getenv("BOT_TOKEN");
+$admin_chat_id = getenv("ADMIN_CHAT_ID");
+
 $telegram = new Telegram($bot_token);
 
 $chat_id = $telegram->ChatID();
