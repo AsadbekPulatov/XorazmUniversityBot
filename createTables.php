@@ -18,7 +18,7 @@ if ($connect->query($sql) === TRUE) {
 
 $sql = "CREATE TABLE universities (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL
     )";
 
 if ($connect->query($sql) === TRUE) {
@@ -29,7 +29,7 @@ if ($connect->query($sql) === TRUE) {
 
 $sql = "CREATE TABLE channels (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL
     )";
 
 if ($connect->query($sql) === TRUE) {
