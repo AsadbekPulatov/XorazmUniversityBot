@@ -58,7 +58,7 @@ function checkMembership($channels, $userId) {
 
         $options = [
             "user_id" => $userId,
-            "chat_id" => $channel,
+            "chat_id" => $channel->username,
         ];
         $result = $telegram->getChatMember($options);
 //        $result = file_get_contents("https://api.telegram.org/bot$botToken/getChatMember?chat_id=$channel&user_id=$userId");
